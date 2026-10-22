@@ -204,6 +204,90 @@ p.feature-card-description {
   font-weight: 700;
   display: block;
 }
+
+/* facts styles  */
+.facts {
+  padding: 6.5rem 0;
+}
+
+.facts-header {
+  max-width: 55rem;
+  margin-bottom: 10rem;
+}
+
+.fact-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 24rem);
+  justify-content: space-between;
+}
+
+.fact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4.5rem;
+  padding-bottom: 6rem;
+  border: 1px solid #ff900e;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+.fact-card img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h3.fact-counter {
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p.fact-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* sponsors styles  */
+
+.sponsors {
+  padding: 6.5rem 0;
+}
+
+.sponsors-header {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.sponsors-logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sponsors-logo img {
+  filter: grayscale(100%);
+}
+
+footer {
+  padding: 6.5em 0;
+}
+
+.footer-container {
+  background-color: #fff4e7;
+  padding: 4rem;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+
+.footer-container p {
+  font-size: 2rem;
+}
+
 /* responsive media queries  */
 /* Extra small Devices  */
 
@@ -259,6 +343,17 @@ p.feature-card-description {
   .features-image img {
     width: 100%;
   }
+
+  .fact-cards {
+    grid-template-columns: repeat(1, 24rem);
+    gap: 2.5rem;
+    justify-content: center;
+  }
+
+  .sponsors-logo {
+    justify-content: center;
+    gap: 4rem;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -293,6 +388,10 @@ p.feature-card-description {
     gap: 4rem;
   }
 
+  .features-image {
+    text-align: center;
+  }
+
   .feature-badge {
     margin-top: 2rem;
     margin-left: 0;
@@ -304,6 +403,20 @@ p.feature-card-description {
     line-height: 4rem;
     font-weight: 500;
     display: inline;
+  }
+  .facts-header {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .fact-cards {
+    grid-template-columns: repeat(2, 24rem);
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .sponsors-logo {
+    justify-content: center;
+    gap: 4rem;
   }
 }
 
@@ -324,5 +437,11 @@ p.feature-card-description {
     line-height: 4rem;
     font-weight: 500;
     display: inline;
+  }
+  .fact-card {
+    padding: 4.5rem 1.5rem 6rem 1.5rem;
+  }
+  .fact-cards {
+    grid-template-columns: repeat(4, max-content);
   }
 }
