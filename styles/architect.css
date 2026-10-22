@@ -215,6 +215,10 @@ p.feature-card-description {
   margin-bottom: 10rem;
 }
 
+.facts-title {
+  font-size: 4.5rem;
+}
+
 .fact-cards {
   display: grid;
   grid-template-columns: repeat(4, 24rem);
@@ -260,6 +264,10 @@ p.fact-name {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 5rem;
+}
+
+.sponsors-title {
+  font-size: 4.5rem;
 }
 
 .sponsors-logo {
@@ -426,7 +434,7 @@ footer {
     padding-right: 2rem;
   }
 
-  .feature-badge {
+  /* .feature-badge {
     margin-top: 2rem;
     margin-left: 0;
     width: auto;
@@ -437,7 +445,7 @@ footer {
     line-height: 4rem;
     font-weight: 500;
     display: inline;
-  }
+  } */
   .fact-card {
     padding: 4.5rem 1.5rem 6rem 1.5rem;
   }
