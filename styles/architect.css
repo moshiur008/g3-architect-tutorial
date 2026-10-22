@@ -364,6 +364,7 @@ footer {
   }
 }
 
+/* for small and medium devices*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .r-gap {
     padding-left: 2rem;
@@ -428,24 +429,14 @@ footer {
   }
 }
 
+/*for large device */
+
 @media screen and (min-width: 992px) and (max-width: 1440px) {
   .r-gap {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  /* .feature-badge {
-    margin-top: 2rem;
-    margin-left: 0;
-    width: auto;
-  }
-
-  .feature-badge span {
-    font-size: 3rem;
-    line-height: 4rem;
-    font-weight: 500;
-    display: inline;
-  } */
   .fact-card {
     padding: 4.5rem 1.5rem 6rem 1.5rem;
   }
